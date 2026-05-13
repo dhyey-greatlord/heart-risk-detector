@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/2025.1/Vivado/data/rsb/busdef" \
+"../../../../Perceptron_heart.srcs/sources_1/new/heart_risk_minimal.v" \
+"../../../../Perceptron_heart.srcs/sources_1/new/tb_heart_risk.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
